@@ -1,0 +1,11 @@
+{
+  "name": "google-analytics-scroll-events",
+  "version": "1.0.0",
+  "description": "Google Analytics events for tracking window scroll.",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Ryan Burnette",
+  "license": "ISC"
+}
