@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="https://unpkg.com/mocha/mocha.css" rel="stylesheet" />
+    <style>
+      body {
+        height: 1000rem;
+      }
+      .foo,.bar {
+        position: absolute;
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        background-color: red;
+      }
+      .foo {
+        top: 200rem;
+      }
+      .bar {
+        top: 600rem;
+      }
+    </style>
+</head>
+<body>
+<div id="mocha"></div>
+
+<div class="foo"></div>
+<div class="bar"></div>
+
+<script src="https://unpkg.com/mocha/mocha.js"></script>
+<script src="https://unpkg.com/chai/chai.js"></script>
+<script>mocha.setup('bdd')</script>
+<script src="test-ga.js"></script><!-- fake ga function for testing -->
+<script src="../index.js"></script><!-- lib -->
+<script src="test-events.js"></script><!-- set up some test events -->
+<script src="index.js"></script><!-- tests -->
+<script>
+    mocha.checkLeaks();
+    mocha.run();
+</script>
+</body>
+</html>

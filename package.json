@@ -1,11 +1,12 @@
 {
   "name": "google-analytics-scroll-events",
   "version": "1.0.0",
-  "description": "Google Analytics events for tracking window scroll.",
+  "description": "A browser JavaScript library for binding Google Analytics events to the window scrolling to an element.",
   "main": "index.js",
-  "scripts": {
-    "test": ""
-  },
   "author": "Ryan Burnette",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
 }
